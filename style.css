@@ -116,9 +116,10 @@ body {
         display: none;
     }
 
-    .skills {
+    .skills,
+    .socials {
         flex-wrap: wrap;
-        padding: 4rem 0;
+        padding-top: 1.5rem;
     }
 
     .skill {
