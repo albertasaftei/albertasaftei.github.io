@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: floralwhite;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/photo.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+.info {
+    flex: 1;
+    font-family: "Montserrat";   
+    padding: 0 5em;
+}
+
+.info h1 {
+    font-size: 4rem;
+    position: relative;
+}
+
+.info h1::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0%;
+    background-color: #4D7EA8;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.info h4 {
+    font-size: 1.1rem;
+    color: rgb(88, 88, 88);
+}
+
+.info h4 .span {
+    display: none;
+}
+
+.hero-paragraph {
+    font-family: "Source Sans Pro";
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.container {
+    padding-top: 2em;
+}
+
+.skills {
+    display: flex;
+    padding-top: 1em;
+}
+
+.skill {
+    margin-right: 3em;
+}
+
+.skill:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 678px) {
+
+    header {
+        display: none;
+    }
+
+    .hero {
+        position: relative;
+        flex-direction: row;
+        padding: 5em 0;
+    }
+
+    .info {
+        padding: 0 2em;
+    }
+
+    .info h1 {
+        font-size: 2.5rem;
+    }
+
+    .info h4 {
+        font-size: 1rem;
+    }
+
+    .info h4 .span {
+        display: inline;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        padding: 4rem 0;
+    }
+
+    .skill {
+        margin-right: 0;
+    }
+
+}
