@@ -84,6 +84,28 @@ body {
     margin-right: 0;
 }
 
+.info .cta {
+    padding-top: 2em;
+}
+
+.info .cta a {
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color:  #4D7EA8;
+    display: inline-block;
+    color: white;
+    border: 1px solid  #4D7EA8;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.info .cta a:hover {
+    color:  #4D7EA8;
+    background-color: white;
+
+}
+
 @media only screen and (max-width: 1024px) {
 
     header {
@@ -128,6 +150,11 @@ body {
 
     .social {
         margin-right: 2em;
+    }
+
+    .info .cta a {
+        display: block;
+        text-align: center;
     }
 
 }
