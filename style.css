@@ -69,12 +69,14 @@ body {
     padding-top: 2em;
 }
 
-.skills {
+.skills,
+.socials {
     display: flex;
     padding-top: 1em;
 }
 
-.skill {
+.skill,
+.social {
     margin-right: 3em;
 }
 
@@ -82,7 +84,7 @@ body {
     margin-right: 0;
 }
 
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 1024px) {
 
     header {
         display: none;
@@ -121,6 +123,10 @@ body {
 
     .skill {
         margin-right: 0;
+    }
+
+    .social {
+        margin-right: 2em;
     }
 
 }
